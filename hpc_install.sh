@@ -16,7 +16,7 @@ python -m venv sel3_${VSC_INSTITUTE_CLUSTER}
 cd ..
 
 # Activate the virtual environment
-source venvs/testenv_${VSC_INSTITUTE_CLUSTER}/bin/activate
+source venvs/sel3_${VSC_INSTITUTE_CLUSTER}/bin/activate
 pip install --upgrade pip
 
 # Install packages
@@ -24,4 +24,4 @@ curl https://raw.githubusercontent.com/Co-Evolve/SEL3-tutorials-2026/refs/heads/
 pip install --only-binary=:all: -r requirements.txt
 
 # Enable our environment as a Jupyter Notebook kernel for the tutorials
-python -m ipykernel install --user --name=testenv_${VSC_INSTITUTE_CLUSTER}-kernel
+python -m ipykernel install --user --name=sel3_${VSC_INSTITUTE_CLUSTER}-kernel
